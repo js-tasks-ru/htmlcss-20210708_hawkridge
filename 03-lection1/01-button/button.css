@@ -27,31 +27,31 @@
 
 .btn_primary,
 .btn_secondary {
-    color: #FFFFFF;
+    color: var(--white);
 }
 
 .btn_primary {
-    background: #4263EB;
+    background: var(--primary);
 }
 
 .btn_primary:hover {
-    background: #2342C0;
+    background: var(--blue-1);
 }
 
 .btn_secondary {
-    background: #7048E8;
+    background: var(--secondary);
 }
 
 .btn_secondary:hover {
-    background: #5028C6;
+    background: var(--purple-1);
 }
 
 .btn_alternate {
-    background: transparent;
-    border-color: #ACB5BD;
-    color: #495057;
+    background: var(--alternate);
+    border-color: var(--gray-3);
+    color: var(--gray-4);
 }
 
 .btn_alternate:hover {
-    border-color: #212429;
+    border-color: var(--black);
 }
