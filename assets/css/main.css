@@ -46,3 +46,7 @@ html, body {
     width: 1110px;
     margin: auto;
 }
+
+.lineSeparator {
+    border-top: 1px solid var(--gray-2);
+}

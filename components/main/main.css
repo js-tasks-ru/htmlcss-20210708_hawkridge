@@ -10,8 +10,3 @@
     text-align: center;
     padding: 72px;
 }
-
-.main_separators {
-    border-top: 1px solid var(--gray-2);
-    border-bottom: 1px solid var(--gray-2);
-}

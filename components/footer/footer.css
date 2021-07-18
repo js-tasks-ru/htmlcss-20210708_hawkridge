@@ -16,8 +16,8 @@
     padding: 71px 0 32px 0;
 }
 
-.footer__title_black,
-.footer__content_black {
+.footer__title_color,
+.footer__content_color {
     color: var(--black);
 }
 
