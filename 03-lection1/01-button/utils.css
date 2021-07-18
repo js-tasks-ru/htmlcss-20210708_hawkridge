@@ -1,0 +1,26 @@
+.container {
+    width: 1110px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.row__title {
+    flex: 1;
+    padding: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.row__title-gray {
+    color: #ACB5BD;
+}
+
+.row__content {
+    flex: 5;
+}
