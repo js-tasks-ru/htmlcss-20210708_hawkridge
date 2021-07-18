@@ -4,17 +4,16 @@
         <link rel="stylesheet" href="./assets/css/normalize.css">
         <link rel="stylesheet" href="./assets/css/main.css">
         <link rel='stylesheet' href='./components/header/header.css'>
+        <link rel='stylesheet' href='./components/main/main.css'>
+        <link rel='stylesheet' href='./components/footer/footer.css'>
     </head>
     <body>
         <div class='page'>
             <header class='header'>
                 <div class='page__container'>
-                    <section class='header__topContainer'>
-                        <div class='header__logo'>
-                            Awesome logo
-                        </div>
-                        <nav class='header__primaryNav'>
-                            <a href='#' class='primaryNav__item'>Components</a>
+                    <section class='header__topContainer header__logo'>
+                        <nav class='header__primaryNav header__primaryNav_gray'>
+                            <a href='#' class='primaryNav__item primaryNav__item_selected'>Components</a>
                             <a href='#' class='primaryNav__item'>About</a>
                             <a href='#' class='primaryNav__item'>Contacts</a>
                         </nav>
@@ -22,24 +21,35 @@
                             Theme switcher
                         </div>
                     </section>
-                    <h1 class='header__title'>
+                    <h1 class='header__title header__title_black'>
                         Reusable component library
                     </h1>
-                    <nav class='header__secondaryNav'>
-                        <a href='#' class='secondaryNav__item'>All components</a>
+                    <nav class='header__secondaryNav header__secondaryNav_gray'>
+                        <a href='#' class='secondaryNav__item secondaryNav__item_selected'>All components</a>
                         <a href='#' class='secondaryNav__item'>Elements</a>
                         <a href='#' class='secondaryNav__item'>Containers</a>
                         <a href='#' class='secondaryNav__item'>Templates</a>
                     </nav>
                 </div>
             </header>
-            <main class='content'>
+            <main class='main main_grayBg main_separators'>
                 <div class='page__container'>
-
+                    <section class='main__content'>
+                        There will be list of funny cats names...
+                    </section>
                 </div>
             </main>
             <footer class='footer'>
-
+                <div class='page__container'>
+                    <h2 class='footer__title footer__title_black'>
+                        About
+                    </h2>
+                    <p class='footer__content footer__content_black'>This project is a collection of professionally designed, pre-built, fully responsive
+                        HTML snippets you can drop into your projects. Get started by checking out our free
+                        preview components, or browsing the PNG previews in the categories you're most
+                                                        curious about.
+                    </p>
+                </div>
             </footer>
         </div>
     </body>

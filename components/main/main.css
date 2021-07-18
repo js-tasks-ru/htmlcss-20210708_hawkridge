@@ -1,0 +1,17 @@
+.main {
+    flex: 1;
+}
+
+.main_grayBg {
+    background: var(--gray-0);
+}
+
+.main__content {
+    text-align: center;
+    padding: 72px;
+}
+
+.main_separators {
+    border-top: 1px solid var(--gray-2);
+    border-bottom: 1px solid var(--gray-2);
+}

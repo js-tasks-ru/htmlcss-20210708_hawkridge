@@ -1,15 +1,27 @@
 .header {
-
+    font-family: 'Inter', sans-serif;
 }
 
 .header__topContainer {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    position: relative;
 }
 
-.header__logo {
-    margin-right: auto;
+.header__logo:after {
+    position: absolute;
+    left: 0;
+    content: '';
+    height: 30px;
+    width: 113px;
     padding: 24px 0;
+    background:
+            url('../../assets/images/icon-logo-1.svg'),
+            url('../../assets/images/icon-logo-2.svg'),
+            url('../../assets/images/icon-logo-3.svg');
+    background-repeat: no-repeat;
+    background-position: 0px 24px, 40px 23px, 80px 23px;
 }
 
 .header__primaryNav,
@@ -17,12 +29,38 @@
     padding: 32px 0;
 }
 
+.header__primaryNav,
+.header__secondaryNav {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.header__primaryNav_gray,
+.header__secondaryNav_gray {
+    color: var(--gray-3);
+}
+
 .header__primaryNav {
 
 }
 
-.primaryNav__item {
+.primaryNav__item_selected,
+.secondaryNav__item_selected {
+    color: var(--black);
+}
 
+.secondaryNav__item {
+    border-bottom: 5px solid transparent;
+    padding-bottom: 8px;
+    margin-right: 40px;
+}
+
+.secondaryNav__item_selected {
+    border-color: var(--black);
+}
+
+.primaryNav__item {
+    margin-right: 24px;
 }
 
 .header__themeSwitcher {
@@ -30,14 +68,16 @@
 }
 
 .header__title {
-    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 50px;
     line-height: 64px;
-    color: #212429;
+}
+
+.header__title_black {
+    color: var(--black);
 }
 
 .header__secondaryNav {
-
+    display: flex;
 }
