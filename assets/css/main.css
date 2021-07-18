@@ -29,3 +29,8 @@
 
     font-family: 'Roboto', sans-serif;
 }
+
+.page__container {
+    width: 1110px;
+    margin: auto;
+}

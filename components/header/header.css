@@ -1,0 +1,43 @@
+.header {
+
+}
+
+.header__topContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__logo {
+    margin-right: auto;
+    padding: 24px 0;
+}
+
+.header__primaryNav,
+.header__themeSwitcher {
+    padding: 32px 0;
+}
+
+.header__primaryNav {
+
+}
+
+.primaryNav__item {
+
+}
+
+.header__themeSwitcher {
+
+}
+
+.header__title {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 64px;
+    color: #212429;
+}
+
+.header__secondaryNav {
+
+}
