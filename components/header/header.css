@@ -13,43 +13,8 @@
     margin-right: auto;
 }
 
-.header__primaryNav,
 .header__themeSwitcher {
     padding: 32px 0;
-}
-
-.header__primaryNav,
-.header__secondaryNav {
-    font-size: 16px;
-    line-height: 24px;
-    color: var(--gray-3);
-}
-
-.header__primaryNav {
-
-}
-
-.primaryNav__item_selected,
-.secondaryNav__item_selected {
-    color: var(--black);
-}
-
-.secondaryNav__item {
-    border-bottom: 5px solid transparent;
-    padding-bottom: 8px;
-    margin-right: 40px;
-}
-
-.secondaryNav__item_selected {
-    border-color: var(--black);
-}
-
-.primaryNav__item {
-    margin-right: 24px;
-}
-
-.header__themeSwitcher {
-
 }
 
 .header__title {
@@ -61,8 +26,4 @@
 
 .header__title_color {
     color: var(--black);
-}
-
-.header__secondaryNav {
-    display: flex;
 }
