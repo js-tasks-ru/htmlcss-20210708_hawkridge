@@ -2,10 +2,39 @@
 <!-- Страница с гистограммой -->
 <html lang="ru">
     <head>
+        <link rel='stylesheet' href='../../assets/css/normalize.css'>
         <link rel="stylesheet" href="../../assets/css/main.css">
+        <link rel="stylesheet" href="./utils.css">
         <link rel="stylesheet" href="./histogram.css">
     </head>
     <body>
+    <div class='container'>
+        <div class='row'>
+            <h3 class='row__title'>
+                Histogram
+            </h3>
+            <section class='row__content'>
+                <section class='histogram'>
+                    <header class='histogram__header'>
+                        <div class='histogram__header__counter'>
+                            <span class='histogram__header__counterTitle'>Total orders</span>
+                            <span class='histogram__header__counterAmount'>50254</span>
+                        </div>
 
+                        <button class='histogram__header__btn'>View all</button>
+                    </header>
+
+                    <section class='histogram__bar'>
+                        <div class='histogram__barItem height_10'></div>
+                        <div class='histogram__barItem height_46'></div>
+                        <div class='histogram__barItem height_27'></div>
+                        <div class='histogram__barItem height_8'></div>
+                        <div class='histogram__barItem height_13'></div>
+                        <div class='histogram__barItem height_33'></div>
+                    </section>
+                </section>
+            </section>
+        </div>
+    </div>
     </body>
 </html>
