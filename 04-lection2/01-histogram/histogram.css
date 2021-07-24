@@ -13,33 +13,33 @@
     margin-bottom: 40px;
 }
 
-.histogram__header__counter {
+.histogram__headerCounter {
     display: flex;
     flex-direction: column;
 }
 
-.histogram__header__counterTitle,
-.histogram__header__counterAmount,
-.histogram__header__btn {
+.histogram__counterTitle,
+.histogram__counterAmount,
+.histogram__headerBtn {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: normal;
     color: var(--black);
 }
 
-.histogram__header__counterTitle {
+.histogram__counterTitle {
     font-size: 16px;
     line-height: 24px;
     opacity: 0.8;
     margin-bottom: 6px;
 }
 
-.histogram__header__counterAmount {
+.histogram__counterAmount {
     font-size: 20px;
     line-height: 26px;
 }
 
-.histogram__header__btn {
+.histogram__headerBtn {
     margin-left: auto;
     font-size: 16px;
     line-height: 24px;
@@ -67,21 +67,21 @@
     margin-right: 0;
 }
 
-.height_8 {
+.histogram__barItem_height_8 {
     height: 8px;
 }
-.height_10 {
+.histogram__barItem_height_10 {
     height: 10px;
 }
-.height_13 {
+.histogram__barItem_height_13 {
     height: 13px;
 }
-.height_27 {
+.histogram__barItem_height_27 {
     height: 27px;
 }
-.height_33 {
+.histogram__barItem_height_33 {
     height: 33px;
 }
-.height_46 {
+.histogram__barItem_height_46 {
     height: 46px;
 }
