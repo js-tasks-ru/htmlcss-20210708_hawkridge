@@ -1,7 +1,7 @@
 .modal {
     display: none;
-    background: #C4C4C4;
-    position: absolute;
+    background: rgba(196, 196, 196, .5);
+    position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
@@ -13,7 +13,7 @@
     border-radius: 8px;
     padding: 30px 40px 33px;
     width: 428px;
-    position: relative;
+    position: absolute;
     box-sizing: border-box;
     left: 50%;
     top: 50%;
