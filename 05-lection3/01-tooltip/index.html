@@ -2,10 +2,28 @@
 <!-- Страница с тултипом -->
 <html lang="ru">
     <head>
+        <link rel='stylesheet' href='../../assets/css/normalize.css'>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./tooltip.css">
+
+        <style>
+            .container {
+                width: 1110px;
+                margin: auto;
+                display: flex;
+                justify-content: center;
+                padding: 150px;
+            }
+        </style>
     </head>
     <body>
-
+        <div class='container'>
+            <div class='tooltip'>
+                <div class='tooltip__marker'></div>
+                <div class='tooltip__tip tooltip__tip_blue'>
+                    Helper text
+                </div>
+            </div>
+        </div>
     </body>
 </html>
