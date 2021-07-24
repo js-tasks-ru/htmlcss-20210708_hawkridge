@@ -1,4 +1,5 @@
 .skeleton {
+    width: 579px;
     background: var(--white);
     border: 1px solid var(--gray-3);
     box-sizing: border-box;
@@ -27,6 +28,7 @@
 .skeleton__headerColumn {
     display: flex;
     flex-direction: column;
+    flex: 1;
 }
 
 .skeleton__placeholder_circle {
@@ -38,15 +40,15 @@
 }
 
 .skeleton__placeholder_lineS {
-    width: 172px;
+    width: 55%;
 }
 
 .skeleton__placeholder_lineM {
-    width: 257px;
+    width: 70%;
 }
 
 .skeleton__placeholder_lineL {
-    width: 515px;
+    width: 100%;
 }
 
 .skeleton__placeholder_lineS,
