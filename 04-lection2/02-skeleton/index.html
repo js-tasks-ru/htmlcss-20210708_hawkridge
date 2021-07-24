@@ -2,10 +2,57 @@
 <!-- Страница со скелетоном -->
 <html lang="ru">
     <head>
+        <link rel="stylesheet" href="../../assets/css/normalize.css">
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./skeleton.css">
+
+        <style>
+            .container {
+                width: 1110px;
+                margin: auto;
+            }
+
+            .row {
+                display: flex;
+            }
+
+            .row__title {
+                margin: 75px 194px 0 0;
+                font-family: 'Inter', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 38px;
+                line-height: 46px;
+                color: var(--black);
+            }
+
+            .row__content {
+                margin-top: 75px;
+            }
+        </style>
     </head>
     <body>
-
+    <div class='container'>
+        <div class='row'>
+            <h3 class='row__title'>
+                Skeleton
+            </h3>
+            <section class='row__content'>
+                <div class='skeleton'>
+                    <div class='skeleton__header'>
+                        <div class='skeleton__placeholder_circle'></div>
+                        <div class='skeleton__headerColumn'>
+                            <div class='skeleton__placeholder_lineS'></div>
+                            <div class='skeleton__placeholder_lineM'></div>
+                        </div>
+                    </div>
+                    <div class='skeleton__footer'>
+                        <div class='skeleton__placeholder_lineL'></div>
+                        <div class='skeleton__placeholder_lineL'></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
     </body>
 </html>
