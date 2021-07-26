@@ -40,7 +40,6 @@
     cursor: pointer;
     width: 24px;
     height: 24px;
-    background: url('../../assets/images/icon-tooltip-marker.svg');
 }
 
 .tooltip__marker:hover + .tooltip__tip {
