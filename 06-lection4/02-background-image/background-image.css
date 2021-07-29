@@ -1,0 +1,26 @@
+.container {
+    height: 100%;
+    width: 400px;
+    background: url('./public/forest_400.jpg') center no-repeat;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+        background: url('./public/forest_768.jpg') center no-repeat;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        width: 1024px;
+        background: url('./public/forest_1024.jpg') center no-repeat;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .container {
+        width: 2560px;
+        background: url('./public/forest_2560.jpg') center no-repeat;
+    }
+}
