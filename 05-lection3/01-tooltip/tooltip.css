@@ -42,6 +42,10 @@
     height: 24px;
 }
 
+.icon {
+    color: var(--black);
+}
+
 .tooltip__marker:hover + .tooltip__tip {
     display: inline-block;
 }
