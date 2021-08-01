@@ -15,10 +15,8 @@
 }
 
 .radio__labelText {
-    position: absolute;
     white-space: nowrap;
-    left: 100%;
-    margin-left: 12px;
+    margin-left: 40px;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: normal;
