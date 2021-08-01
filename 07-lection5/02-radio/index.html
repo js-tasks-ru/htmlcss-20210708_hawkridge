@@ -29,7 +29,13 @@
 <div class='container'>
     <div class='row'>
         <div class='radio'>
-            <input class='radio__control' type='radio' id='radio__control_default' tabindex>
+            <input
+              class='radio__control'
+              type='radio'
+              id='radio__control_default'
+              name='role'
+              value='admin'
+              tabindex>
             <label class='radio__label' for='radio__control_default'>
                 <span class='radio__labelText'>Default radio</span>
             </label>
@@ -37,7 +43,14 @@
     </div>
     <div class='row'>
         <div class='radio'>
-            <input class='radio__control' type='radio' id='radio__control_checked' tabindex checked>
+            <input
+              class='radio__control'
+              type='radio'
+              id='radio__control_checked'
+              name='role'
+              value='user'
+              tabindex
+              checked>
             <label class='radio__label' for='radio__control_checked'>
                 <span class='radio__labelText'>Checked radio</span>
             </label>
@@ -56,7 +69,7 @@
         <div class='radio'>
             <input class='radio__control' type='radio' id='radio__control_disabled_c' tabindex disabled checked>
             <label class='radio__label' for='radio__control_disabled_c'>
-                <span class='radio__labelText'>Disabled radio</span>
+                <span class='radio__labelText'>Disabled checked radio</span>
             </label>
         </div>
     </div>
