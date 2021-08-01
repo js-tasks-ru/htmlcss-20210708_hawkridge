@@ -2,10 +2,64 @@
 <!-- Страница чекбокса -->
 <html lang="ru">
     <head>
+        <link rel="stylesheet" href="../../assets/css/normalize.css">
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./checkbox.css">
+
+        <style>
+            html,
+            body {
+                height: 100%;
+            }
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .container {
+                display: flex;
+                flex-direction: column;
+            }
+            .row {
+                margin: 20px;
+            }
+        </style>
     </head>
     <body>
+        <div class='container'>
+            <div class='row'>
+                <div class='checkbox'>
+                    <input class='checkbox__control' type='checkbox' id='checkbox__control_default' tabindex>
+                    <label class='checkbox__label' for='checkbox__control_default'>
+                        <span class='checkbox__labelText'>Default checkbox</span>
+                    </label>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='checkbox'>
+                    <input class='checkbox__control' type='checkbox' id='checkbox__control_checked' tabindex checked>
+                    <label class='checkbox__label' for='checkbox__control_checked'>
+                        <span class='checkbox__labelText'>Checked checkbox</span>
+                    </label>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='checkbox'>
+                    <input class='checkbox__control' type='checkbox' id='checkbox__control_disabled' tabindex disabled>
+                    <label class='checkbox__label' for='checkbox__control_disabled'>
+                        <span class='checkbox__labelText'>Disabled checkbox</span>
+                    </label>
+                </div>
+            </div>
 
+            <div class='row'>
+                <div class='checkbox'>
+                    <input class='checkbox__control' type='checkbox' id='checkbox__control_disabled_c' tabindex disabled checked>
+                    <label class='checkbox__label' for='checkbox__control_disabled_c'>
+                        <span class='checkbox__labelText'>Disabled checkbox</span>
+                    </label>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
