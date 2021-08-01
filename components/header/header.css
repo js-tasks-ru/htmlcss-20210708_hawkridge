@@ -10,6 +10,8 @@
 }
 
 .header__logo {
+    width: 110px;
+    height: 32px;
     margin-right: auto;
 }
 
