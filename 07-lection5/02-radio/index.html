@@ -35,7 +35,7 @@
               id='radio__control_default'
               name='role'
               value='admin'
-              tabindex>
+              tabindex='1'>
             <label class='radio__label' for='radio__control_default'>
                 <span class='radio__labelText'>Default radio</span>
             </label>
@@ -49,7 +49,7 @@
               id='radio__control_checked'
               name='role'
               value='user'
-              tabindex
+              tabindex='2'
               checked>
             <label class='radio__label' for='radio__control_checked'>
                 <span class='radio__labelText'>Checked radio</span>
@@ -58,7 +58,11 @@
     </div>
     <div class='row'>
         <div class='radio'>
-            <input class='radio__control' type='radio' id='radio__control_disabled' tabindex disabled>
+            <input
+              class='radio__control'
+              type='radio'
+              id='radio__control_disabled'
+              disabled>
             <label class='radio__label' for='radio__control_disabled'>
                 <span class='radio__labelText'>Disabled radio</span>
             </label>
@@ -67,7 +71,12 @@
 
     <div class='row'>
         <div class='radio'>
-            <input class='radio__control' type='radio' id='radio__control_disabled_c' tabindex disabled checked>
+            <input
+              class='radio__control'
+              type='radio'
+              id='radio__control_disabled_c'
+              disabled
+              checked>
             <label class='radio__label' for='radio__control_disabled_c'>
                 <span class='radio__labelText'>Disabled checked radio</span>
             </label>
