@@ -1,0 +1,81 @@
+.input {
+    position: relative;
+}
+
+.input__label {
+    display: flex;
+    flex-direction: column;
+}
+
+.input__labelText {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    color: var(--gray-3);
+    margin-bottom: 5px;
+}
+
+.input__control {
+    background: var(--white);
+    border: 1px solid var(--gray-2);
+    box-sizing: border-box;
+    border-radius: 8px;
+    min-width: 350px;
+    outline: none;
+    color: var(--gray-4);
+    padding: 17px 24px 13px;
+    position: relative;
+}
+
+.input__control,
+.input__control::placeholder {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.input__control::placeholder {
+    color: var(--gray-2);
+}
+
+.input__control:focus {
+    border-color: var(--blue-2);
+    box-shadow: 0 1px 1px rgba(51, 154, 240, 0.1);
+}
+
+.input_success:after {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    content: url('../../assets/images/check-circle.svg');
+}
+
+.input_success .input__control:focus {
+    /*  Some styles for this case  */
+}
+
+.input_invalid:after {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    content: url('../../assets/images/alert-triangle.svg');
+}
+
+.input_invalid .input__control:focus {
+    /*  Some styles for this case  */
+}
+
+.input_invalid .input__control {
+    border-color: var(--red);
+}
+
+.input_disabled {
+    pointer-events: none;
+    opacity: .5;
+}
