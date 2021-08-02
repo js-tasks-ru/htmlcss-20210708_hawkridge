@@ -1,11 +1,88 @@
 <!DOCTYPE html>
-<!-- Страница с полем ввода -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./input.css">
-    </head>
-    <body>
+<head>
+    <link rel="stylesheet" href="../../assets/css/normalize.css">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./input.css">
 
-    </body>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+        .row {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class='container'>
+    <div class='row'>
+        <div class='input'>
+            <label class='input__label'>
+                <span class='input__labelText'>Empty</span>
+                <input
+                  placeholder='Placeholder'
+                  class='input__control'
+                  type='text'>
+            </label>
+        </div>
+    </div>
+
+    <div class='row'>
+        <div class='input input_success'>
+            <label class='input__label'>
+                <span class='input__labelText'>Success</span>
+                <input
+                  value='Some value'
+                  class='input__control'
+                  type='text'>
+            </label>
+        </div>
+    </div>
+
+    <div class='row'>
+        <div class='input'>
+            <label class='input__label'>
+                <span class='input__labelText'>Focus</span>
+                <input
+                  class='input__control'
+                  type='text'>
+            </label>
+        </div>
+    </div>
+
+    <div class='row'>
+        <div class='input input_invalid'>
+            <label class='input__label'>
+                <span class='input__labelText'>Invalid</span>
+                <input
+                  class='input__control'
+                  type='text'>
+            </label>
+        </div>
+    </div>
+
+    <div class='row'>
+        <div class='input input_disabled'>
+            <label class='input__label'>
+                <span class='input__labelText'>Disabled</span>
+                <input
+                  disabled
+                  class='input__control'
+                  type='text'>
+            </label>
+        </div>
+    </div>
+</div>
+</body>
 </html>
