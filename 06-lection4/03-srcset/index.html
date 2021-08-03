@@ -1,10 +1,33 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
+        <link rel="stylesheet" href="../../assets/css/normalize.css">
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./srcset.css">
+
+        <style>
+            html,
+            body {
+                height: 100%;
+            }
+
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
     </head>
     <body>
-
+        <section class='container'>
+            <img
+              class='container__image'
+              alt='forest'
+              src='./public/forest_400.jpg'
+              srcset='
+                ./public/forest_400.jpg 1x,
+                ./public/forest_768.jpg 2x
+              '>
+        </section>
     </body>
 </html>
