@@ -47,13 +47,14 @@
     border: 2px solid var(--blue-2);
 }
 
-.radio__control:checked:not([disabled]) ~ .radio__label:after {
+.radio__icon {
+    display: none;
     position: absolute;
-    content: '';
-    background: url(../../assets/images/radio-marker.svg) no-repeat;
-    background-size: contain;
+    left: 3px;
     width: 18px;
     height: 18px;
-    left: 50%;
-    transform: translateX(-50%);
+}
+
+.radio__control:checked:not([disabled]) ~ .radio__label .radio__icon {
+    display: block;
 }
