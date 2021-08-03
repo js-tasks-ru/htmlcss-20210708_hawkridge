@@ -1,11 +1,99 @@
 <!DOCTYPE html>
 <!-- Страница радио -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./radio.css">
-    </head>
-    <body>
+<head>
+    <link rel="stylesheet" href="../../assets/css/normalize.css">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./radio.css">
 
-    </body>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+        .row {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class='container'>
+    <div class='row'>
+        <div class='radio'>
+            <input
+              class='radio__control'
+              type='radio'
+              id='radio__control_default'
+              name='role'
+              value='admin'
+              tabindex='1'>
+            <label class='radio__label' for='radio__control_default'>
+                <span class='radio__labelText'>Default radio</span>
+                <svg class='radio__icon' xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href='../../assets/images/sprite.svg#radioMarker'></use>
+                </svg>
+            </label>
+        </div>
+    </div>
+    <div class='row'>
+        <div class='radio'>
+            <input
+              class='radio__control'
+              type='radio'
+              id='radio__control_checked'
+              name='role'
+              value='user'
+              tabindex='2'
+              checked>
+            <label class='radio__label' for='radio__control_checked'>
+                <span class='radio__labelText'>Checked radio</span>
+                <svg class='radio__icon' xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href='../../assets/images/sprite.svg#radioMarker'></use>
+                </svg>
+            </label>
+        </div>
+    </div>
+    <div class='row'>
+        <div class='radio'>
+            <input
+              class='radio__control'
+              type='radio'
+              id='radio__control_disabled'
+              disabled>
+            <label class='radio__label' for='radio__control_disabled'>
+                <span class='radio__labelText'>Disabled radio</span>
+                <svg class='radio__icon' xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href='../../assets/images/sprite.svg#radioMarker'></use>
+                </svg>
+            </label>
+        </div>
+    </div>
+
+    <div class='row'>
+        <div class='radio'>
+            <input
+              class='radio__control'
+              type='radio'
+              id='radio__control_disabled_c'
+              disabled
+              checked>
+            <label class='radio__label' for='radio__control_disabled_c'>
+                <span class='radio__labelText'>Disabled checked radio</span>
+                <svg class='radio__icon' xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href='../../assets/images/sprite.svg#radioMarker'></use>
+                </svg>
+            </label>
+        </div>
+    </div>
+</div>
+</body>
 </html>
