@@ -1,11 +1,63 @@
 <!DOCTYPE html>
-<!-- Страница с кнопкой переключения -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./toggler.css">
-    </head>
-    <body>
+<head>
+    <link rel="stylesheet" href="../../assets/css/normalize.css">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./toggler.css">
 
-    </body>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+        .row {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class='container'>
+    <div class='row'>
+        <div class='toggler'>
+            <input
+              class='toggler__control'
+              type='checkbox'
+              id='toggler__control_default'
+              tabindex='1'>
+            <label class='toggler__label' for='toggler__control_default'>
+                <span class='toggler__labelText'>Off - On</span>
+                <svg class='toggler__icon' xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href='../../assets/images/sprite.svg#toggler'></use>
+                </svg>
+            </label>
+        </div>
+    </div>
+
+    <div class='row'>
+        <div class='toggler'>
+            <input
+              class='toggler__control'
+              disabled
+              type='checkbox'
+              id='toggler__control_disabled'
+              tabindex='1'>
+            <label class='toggler__label' for='toggler__control_disabled'>
+                <span class='toggler__labelText'>Disabled</span>
+                <svg class='toggler__icon' xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href='../../assets/images/sprite.svg#toggler'></use>
+                </svg>
+            </label>
+        </div>
+    </div>
+</div>
+</body>
 </html>
